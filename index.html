@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <!-- jetbrains mono link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <canvas id="background"></canvas>
+    <div class="terminal">
+        <div class="terminal_header">
+            <span>welcome@venkatrohit.com:~</span>
+        </div>
+        <div class="terminal_body" id="terminal_body">
+            <div class="teminal_content">
+                <span style="color:aliceblue">Recognized commands :- &lt;<a href="#" onclick="click_ls()">ls</a>&gt; &lt;<a href="#" onclick="click_cat(null)">cat</a>&gt;</span>
+                <br>
+                <span>visitor@venkatrohit.com:~$</span>
+                <br>
+                <span id="iBefore">visitor@venkatrohit.com:~$</span>
+                <div id="cursor">
+                    <input type="text" name="input" id="input" spellcheck="false" autofocus>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

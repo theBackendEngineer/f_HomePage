@@ -1,0 +1,102 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+html, body {
+  
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas{
+  z-index:-1;
+}
+.terminal{
+  position: absolute; 
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 1;
+  width:70vw;
+  height:60vh;
+  min-width:800px;
+}
+.terminal_header{
+  width: 100%;
+  padding: 0 8px;
+  background-color: #424040;
+  height:25px;
+  /* border */
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.terminal_header span{
+  color: aliceblue;
+  display: table;
+  margin: 0 auto;
+}
+
+.terminal_body{
+  background-color:#151D3B;
+  height:100%;
+  overflow: auto;
+}
+
+.teminal_content{
+  padding: 8px;
+  color: #00C897;
+  overflow:auto;
+  word-break: break-word;
+}
+.teminal_content a{
+  color:aliceblue;
+}
+#input{
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 500px;
+  font-size: 16px;
+  color: transparent;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+}
+
+#input:focus{
+  outline: none;
+}
+#cursor{
+  display: inline;
+}
+#cursor {
+  position: relative;
+}
+#cursor i {
+  position: absolute;
+  width: 8px;
+  height: 80%;
+  background-color: gray;
+  left: 5px;
+  top: 10%;
+  animation-name: blink;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+#cursor input:focus + i {
+  display: none;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
